@@ -1,0 +1,24 @@
+android/app/build.gradle
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+}
+
+android {
+    namespace "com.example.calchub"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.calchub"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
